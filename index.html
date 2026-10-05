@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khaya Nyawose, data engineering intern at GOLDENLOOP. Explore a PostgreSQL pipeline for cleaning, validating, and analysing synthetic development data.">
+    <title>Khaya Nyawose — Data Engineering Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23c5f277'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial' font-size='34' font-weight='700'%3Ek%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- HEADER: your name and section navigation -->
+    <header class="site-header wrap">
+      <a class="logo" href="#home" aria-label="Khaya Nyawose, home">khaya<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Let’s connect <svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg>
+</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- INTRODUCTION: a short summary and a conceptual pipeline diagram -->
+      <section class="hero wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">DATA ENGINEERING INTERN · GOLDENLOOP</p>
+          <p class="intro-name">Hi, I’m Khaya Nyawose.</p>
+          <h1 id="hero-title">Making data<br><span>make sense.</span></h1>
+          <p class="hero-description">I build my skills through data pipelines, SQL, and careful data quality checks. My focus: turning messy records into data that’s ready to explore.</p>
+          <div class="actions">
+            <a class="button" href="#work">Explore my project <svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg>
+</a>
+            <a class="text-link" href="https://github.com/Khaya99/world-bank-sql-data-pipeline">View the code <svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m18 16 4-4-4-4" />
+  <path d="m6 8-4 4 4 4" />
+  <path d="m14.5 4-5 16" />
+</svg>
+</a>
+          </div>
+        </div>
+        <figure class="pipeline-panel" aria-labelledby="pipeline-caption">
+          <div class="panel-top"><span>THE PATH FROM RAW TO READY</span><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="8" height="8" x="3" y="3" rx="2" />
+  <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+  <rect width="8" height="8" x="13" y="13" rx="2" />
+</svg>
+</div>
+          <ol class="pipeline-stages">
+            <li><span class="stage-icon"><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+  <path d="M2 12h20" />
+</svg>
+</span><div><span class="stage-label">01 / INGEST</span><strong>Start with the source.</strong><p>Country-year development records</p></div></li>
+            <li><span class="stage-icon"><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="8" height="8" x="3" y="3" rx="2" />
+  <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+  <rect width="8" height="8" x="13" y="13" rx="2" />
+</svg>
+</span><div><span class="stage-label">02 / REFINE</span><strong>Check. Clean. Validate.</strong><p>SQL rules and documented decisions</p></div></li>
+            <li><span class="stage-icon"><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <ellipse cx="12" cy="5" rx="9" ry="3" />
+  <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+  <path d="M3 12A9 3 0 0 0 21 12" />
+</svg>
+</span><div><span class="stage-label">03 / EXPLORE</span><strong>Make the data useful.</strong><p>PostgreSQL analysis and Tableau</p></div></li>
+          </ol>
+          <figcaption id="pipeline-caption">A simplified view of my project workflow.</figcaption>
+        </figure>
+      </section>
+
+      <div class="focus-strip wrap" aria-label="Areas of focus">
+        <span><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <ellipse cx="12" cy="5" rx="9" ry="3" />
+  <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+  <path d="M3 12A9 3 0 0 0 21 12" />
+</svg>
+ SQL &amp; PostgreSQL</span>
+        <span><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="8" height="8" x="3" y="3" rx="2" />
+  <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+  <rect width="8" height="8" x="13" y="13" rx="2" />
+</svg>
+ Data quality &amp; pipelines</span>
+        <span><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+  <path d="M2 12h20" />
+</svg>
+ Development indicators</span>
+      </div>
+
+      <!-- PROJECT: facts below are documented in the linked repository README -->
+      <section class="section wrap" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">One project. Every step<span>.</span></h2></div>
+          <p>From raw records to analysis.</p>
+        </div>
+
+        <article class="project-card">
+          <div class="project-banner">
+            <div><p class="eyebrow">SQL PIPELINE / CASE STUDY</p><h3>World Bank<br>SQL Data Pipeline</h3><p>30 countries · 2000–2023</p></div>
+            <div class="project-emblem" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <ellipse cx="12" cy="5" rx="9" ry="3" />
+  <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+  <path d="M3 12A9 3 0 0 0 21 12" />
+</svg>
+</div>
+          </div>
+          <div class="project-body">
+            <p class="data-note">Synthetic development data inspired by World Bank indicators. These are practice results, not official World Bank findings.</p>
+            <div class="case-grid">
+              <div><h4>The problem</h4><p>Missing values, duplicates, inconsistent formats, and country information made the raw records unsuitable for reliable analysis.</p></div>
+              <div><h4>My approach</h4><p>Profile, clean, validate, and transform the data with SQL. Preserve the raw records and document corrections before analysing the cleaned dataset.</p></div>
+              <div><h4>The outcome</h4><p>A documented PostgreSQL pipeline, cleaned country-year records, SQL analysis, and Tableau visualisations. The repository includes the code and data quality notes.</p></div>
+            </div>
+            <dl class="metrics" aria-label="Cleaning results documented in the repository">
+              <div><dt>Raw records</dt><dd>729</dd></div>
+              <div><dt>Cleaned records</dt><dd>718</dd></div>
+              <div><dt>Quarantined records</dt><dd>7</dd></div>
+              <div><dt>Duplicates excluded</dt><dd>4</dd></div>
+            </dl>
+            <details class="project-details">
+              <summary>Explore the workflow and findings</summary>
+              <div class="details-content">
+                <h4>Research question</h4>
+                <p>How are CO₂ emissions, unemployment, and electricity access related to life expectancy? How do GDP and population relate to these indicators?</p>
+                <h4>Pipeline stages</h4>
+                <ol><li>Load and profile the raw data.</li><li>Clean records and log the decisions.</li><li>Validate and transform the cleaned data.</li><li>Analyse the indicators with SQL and present results in Tableau.</li></ol>
+                <h4>A finding from the practice dataset</h4>
+                <p>The repository reports a positive correlation of 0.780 between electricity access and life expectancy. This describes the synthetic dataset; it does not establish causation or a real-world policy conclusion.</p>
+                <h4>Next step</h4>
+                <p>Extend the work to real World Bank API data using the retrieval script included in the repository.</p>
+              </div>
+            </details>
+            <div class="project-footer">
+              <ul class="tags" aria-label="Project tools"><li>PostgreSQL</li><li>SQL</li><li>Python</li><li>Tableau</li></ul>
+              <a class="button" href="https://github.com/Khaya99/world-bank-sql-data-pipeline">Read the case study &amp; code <svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg>
+</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ABOUT: keep this focused on your experience and tools -->
+      <section class="about section wrap" id="about" aria-labelledby="about-title">
+        <div><p class="eyebrow">02 / ABOUT ME</p><h2 id="about-title">Curious about data.<br>Careful with the details<span>.</span></h2></div>
+        <div class="about-copy"><p class="lead">I’m Khaya Nyawose, a data engineering intern at GOLDENLOOP.</p><p>I’m building practical experience with pipelines and databases. I enjoy the work behind the result: understanding a dataset, checking its quality, and making each transformation easy to follow.</p><p>My World Bank SQL project began in MySQL and was later converted to PostgreSQL. It brings together data cleaning, validation, analysis, and visualisation.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <ellipse cx="12" cy="5" rx="9" ry="3" />
+  <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+  <path d="M3 12A9 3 0 0 0 21 12" />
+</svg>
+<h3>Databases &amp; SQL</h3><p>PostgreSQL · pgAdmin 4 · SQL</p></article>
+          <article class="skill-card"><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="8" height="8" x="3" y="3" rx="2" />
+  <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+  <rect width="8" height="8" x="13" y="13" rx="2" />
+</svg>
+<h3>Data preparation</h3><p>Python · pandas · Data validation</p></article>
+          <article class="skill-card"><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m18 16 4-4-4-4" />
+  <path d="m6 8-4 4 4 4" />
+  <path d="m14.5 4-5 16" />
+</svg>
+<h3>Explore &amp; document</h3><p>Tableau · Git · GitHub</p></article>
+        </div>
+      </section>
+
+      <!-- CONTACT: the email link opens the visitor's email application -->
+      <section class="contact section wrap" id="contact" aria-labelledby="contact-title">
+        <div><p class="eyebrow">03 / LET’S CONNECT</p><h2 id="contact-title">Good work starts<br>with a conversation<span>.</span></h2><p>Let’s talk data engineering, projects, or opportunities.</p></div>
+        <a class="contact-link" href="mailto:mpumelelonyawose99@gmail.com"><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+  <rect x="2" y="4" width="20" height="16" rx="2" />
+</svg>
+<span>Send me an email<strong>mpumelelonyawose99@gmail.com</strong></span><svg class="icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg>
+</a>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      <a class="logo" href="#home">khaya<span>.</span></a>
+      <p>Khaya Nyawose · Made with HTML &amp; CSS</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
