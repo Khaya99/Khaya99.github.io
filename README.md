@@ -1,18 +1,22 @@
 # Khaya Nyawose — Portfolio
 
-Static portfolio for GitHub Pages. Open `index.html` or serve this directory with any static web server.
+Public portfolio: https://khaya99.github.io/
 
-## Content
+A black, blue and white portfolio explaining my World Bank pipeline in plain language, with real Tableau dashboard snapshots and a six-step project journey.
 
-- Introduction and data-inspired decorative artwork.
-- Official World Bank pipeline and dashboard (30 countries, 720 country-year observations, two CSV exports).
-- Original SQL cleaning work, explicitly labelled as simulated practice data and an earlier chapter of the same project.
-- Skills, about and contact sections.
+## Files
 
-The dashboard PNG is a saved snapshot, not a live connection. Replace `assets/world-bank-dashboard.png` when publishing a revised dashboard. The original portrait and contact details have been retained.
+- `index.html`: introduction, project, dashboards, journey, about and contact.
+- `styles.css`: responsive styling; Google Fonts with local font fallbacks.
+- `app.js`: accessible native-dialog dashboard enlargement.
+- `assets/`: portrait, dashboard snapshots and retained earlier assets.
 
-## Accessibility and implementation
+## Project
 
-No external fonts, scripts, frameworks or tracking. The layout adapts to mobile, tablet and desktop. Native expandable project details work with keyboard controls and without JavaScript. Decorative SVGs are hidden from assistive technology. Introductory animation stops after four seconds and is disabled by `prefers-reduced-motion`.
+The separate [World Bank pipeline repository](https://github.com/Khaya99/world-bank-sql-data-pipeline) contains the Python and PostgreSQL work, scheduling documentation, Gmail failure alerts, 18 offline tests and optional file retention.
 
-The site does not perform the data refresh; that is handled by the separate pipeline repository and the local Windows scheduled task.
+GitHub Pages hosts this static portfolio. It does not run the monthly data pipeline. The dashboard images are saved snapshots, not live reports.
+
+## Maintenance
+
+Update the site files on the publishing branch to deploy through GitHub Pages. Replace dashboard PNGs when publishing revised charts. Previous portfolio versions remain available in Git history.
