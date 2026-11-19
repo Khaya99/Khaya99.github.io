@@ -20,3 +20,9 @@ GitHub Pages hosts this static portfolio. It does not run the monthly data pipel
 ## Maintenance
 
 Update the site files on the publishing branch to deploy through GitHub Pages. Replace dashboard PNGs when publishing revised charts. Previous portfolio versions remain available in Git history.
+
+## Dashboard publication status
+
+The interactive Tableau Public dashboard is not published yet. The site labels its images as saved exports and describes online refresh as the next milestone. Add the verified Tableau Public URL after publication; do not imply that updating local CSVs refreshes the website.
+
+The project section includes build challenges, links to report CSVs and operational documentation, and the distinction between synthetic learning data and official API observations.
